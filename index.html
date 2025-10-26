@@ -4,37 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Let's Do Fun!!</title>
+    <!-- Add CSS  -->
     <link rel="stylesheet" href="style.css" />
-    <style>
-      @keyframes fadeSlideIn {
-        from {
-          opacity: 0;
-          transform: translateY(30px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      .fade-in {
-        opacity: 0;
-        animation: fadeSlideIn 0.8s ease forwards;
-      }
-
-      .fade-delay-1 {
-        animation-delay: 0.2s;
-      }
-      .fade-delay-2 {
-        animation-delay: 0.4s;
-      }
-      .fade-delay-3 {
-        animation-delay: 0.6s;
-      }
-      .fade-delay-4 {
-        animation-delay: 0.8s;
-      }
-    </style>
+    <!-- Add JS  -->
+    <script defer src="script.js"></script>
   </head>
 
   <body>
@@ -150,15 +123,7 @@
     </div>
 
     <!-- JavaScript that switches screens after 3 seconds -->
-    <script>
-      // Auto-switch from Welcome Screen to Game Screen after 3 seconds
-      setTimeout(() => {
-        document.getElementById('welcome-screen').style.display = 'none';
-        document.getElementById('game-screen').style.display = 'flex';
-      }, 3000);
-    </script>
 
     <!-- You can link your game logic here -->
-    <script src="script.js"></script>
   </body>
 </html>
